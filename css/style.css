@@ -57,7 +57,7 @@ body {
       font-family: 'Open Sans', sans-serif;
       line-height: 1.4;
       /* background-color: magenta; -- HAVE QUESTION ABOUT THIS STRIP AT BOTTOM*/
-      background-color: #121212;
+      background-color: #f0efef;
       margin: 0;
       padding: 0;
 }
@@ -68,6 +68,12 @@ body {
 /*******************************************/
 
 /* Center the container */
+
+header {
+  background-color: #033048;
+  height: 100px;
+}
+
 #container {
   width: 1000px;
   margin: 0 auto;
@@ -76,20 +82,37 @@ body {
 
 /* Add a black background color to the top navigation */
 .topnav {
-    background-color: #033048;
-    overflow: hidden;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+.topnav ul {
+  margin: 0;
+  padding: 0;
+  height: 100px;
+  list-style: none;
+  float: right;
+}
+
+.topnav ul li {
+  display: inline-block;
+  height: 100px;
+  margin: none;
 }
 
 /* Style the links inside the navigation bar */
 .topnav a {
-    float: right;
-    display: block;
-    color: #f9e42e;
-    text-align: center;
-    padding: 14px 16px;
-    padding-right: 40px;
-    text-decoration: none;
-    font-size: 15px;
+  display: block;
+  color: #f9e42e;
+  text-align: right;
+  padding: 14px 16px;
+  padding-right: 40px;
+  text-decoration: none;
+  height: 50px;
+  margin-top: 25px;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
 }
 
 /* Change the color of links on hover
@@ -110,29 +133,19 @@ Add a color to the active/current link
   width: 600px;
 }
 
+.clear-fix {
+  clear: both;
+}
+
 h1 {
   background-color: #033048;
   font-weight: 700;
-  width: 100%;
   font-size: 28px;
   color: #fff;
   padding-left: 40px;
   margin-top: 0px;
   padding-top: 25px;
-}
-
-#myTopnav {
-  width: 1000px;
-  display: inline-block;
-}
-
-.topnav ul li {
-  margin: none;
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 300;
-  color: #033048;
-  line-height: 1.6em;
+  float: left;
 }
 
 h2 {
@@ -184,14 +197,6 @@ h4 {
   color: #fff;
   margin: auto;
   padding: 45px;
-}
-
-footer {
-  clear: both;
-  text-align: center;
-  color: #FFF;
-  background-color: #121212;
-  padding-top: 20px;
 }
 
 /******************************************
@@ -252,10 +257,10 @@ p:first-letter {
 
 /*THIS IS THE ASIDE*/
 aside { 
-    display: block;
-    float: right;
-    background-color: #f0efef;
-    width: 260px;
+  display: block;
+  float: right;
+  background-color: #f0efef;
+  width: 260px;
 }
 
 .aside-header {
@@ -276,7 +281,7 @@ aside {
 
 .blog-links {
   padding-left: 30px;
-    font-size: 16px;
+  font-size: 16px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #033048;
@@ -316,6 +321,14 @@ aside {
   padding: 10px;
   background-color: #f9e42e;
   text-align: center;
+}
+
+footer {
+  clear: both;
+  text-align: center;
+  color: #FFF;
+  background-color: #121212;
+  padding-top: 20px;
 }
 
 .button-spacing {
