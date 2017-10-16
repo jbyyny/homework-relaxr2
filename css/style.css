@@ -115,15 +115,9 @@ header {
   font-weight: 400;
 }
 
-/* Change the color of links on hover
-.topnav a:hover {
-  color: white;
+a:hover {
+  color: #86BFFC;
 }
-
-Add a color to the active/current link
-.topnav a.active {
-  color: white; 
-}*/
 
 .benefits {
   font-size: 20px;
